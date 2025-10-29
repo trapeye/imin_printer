@@ -38,8 +38,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.compileSdkVersion
+        minSdkVersion 16
+        targetSdkVersion 34
         multiDexEnabled true
     }
 
