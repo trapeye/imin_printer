@@ -1678,7 +1678,8 @@ public class IminPrinterPlugin implements FlutterPlugin, MethodCallHandler, Stre
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(ACTION_PRITER_STATUS_CHANGE);
         intentFilter.addAction(ACTION_POGOPIN_STATUS_CHANGE);
-        ContextCompat.registerReceiver(_context, chargingStateChangeReceiver, intentFilter, ContextCompat.RECEIVER_NOT_EXPORTED);
+        _context.registerReceiver(chargingStateChangeReceiver, intentFilter);
+        //ContextCompat.registerReceiver(_context, chargingStateChangeReceiver, intentFilter, ContextCompat.RECEIVER_NOT_EXPORTED);
     }
 
     @Override
